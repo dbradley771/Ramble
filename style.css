@@ -1,0 +1,147 @@
+@font-size-base: 15px;
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #000000;
+	color: #ffffff;
+	font-size: 110%;
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: 0 0.075em 0.05em rgba(0, 0, 0, 0.25);
+}
+
+hr {
+    border: 0;
+	border-bottom: 1px dashed rgba(255,255,255,0.25);
+    height: 1px;
+	padding: 0;
+	margin: 1rem 5rem;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+	border-bottom: 1px dotted #ffffff;
+}
+a:hover {
+	border-bottom: 1px solid #ffffff;
+}
+
+#background-holder {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+	font-size: 0;
+	position: fixed;
+	z-index: 0;
+	min-width: 320px;
+}
+
+#background-holder div {
+    width: 50%;
+	height:100vh;
+	display: inline-block;
+}
+
+#background-holder span {
+	display: block;
+	height: 100%;
+	width: 100%;
+	margin-top: 40vh;
+	max-height: 60vh;
+	
+}
+
+#background-blue {
+	background: #428BCA;
+}
+
+#background-blue span {
+	background: url("matt.png") no-repeat left bottom;
+    background-size: contain;
+}
+
+#background-red {
+	background: #C02C38;
+}
+
+#background-red span {
+	background: #C02C38 url("tom.png") no-repeat right bottom;
+    background-size:contain;
+}
+
+#container {
+    position: absolute;
+    z-index: 100;
+	width: 100%;
+	min-height: 100%;
+	min-width: 320px;
+}
+
+#wrapper {
+	max-width: 60rem;
+	margin: auto;
+}
+
+#content {
+	padding: 1rem 2rem;
+	text-align: center;
+	background: rgba(0,0,0,0.2);
+}
+
+#content p {
+	margin: 0;
+	padding: 0.5rem;
+}
+
+header {
+	padding: 1.5rem 0;
+	margin-bottom: 1.5rem;
+	text-align: center;
+	border-bottom: 1px solid rgba(255,255,255,0.25);
+	font-family: 'Oleo Script', sans-serif;
+	font-size: 100%;
+}
+
+header p {
+	padding: 0;
+	margin: 0;
+}
+
+#page-title {
+	display: block;
+	font-size: 300%;
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+@media screen and (min-width: 455px) {
+	header {font-size: 175%;}
+}
+
+#page-title span {
+	display: inline-block;
+}
+
+.video {
+	padding: 0.5rem;
+	background: white;
+	width: 100%;
+	max-width: 40rem;
+	height: 23rem;
+	box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+    box-sizing: border-box;
+}
+
+footer {
+	padding: 1.5rem 0;
+	margin-top: 2rem;
+	text-align: center;
+	border-top: 1px solid rgba(255,255,255,0.25);
+	font-size: 60%;
+	opacity: 0.60;
+}
