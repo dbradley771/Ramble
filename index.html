@@ -10,47 +10,132 @@
 	<title>LET'S GET READY TO RAMBLE!</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Oleo+Script" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#424242">
+    <meta name="msapplication-TileColor" content="#424242">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="theme-color" content="#424242">
+    <script type="text/javascript">
+        window.onload = function() {
+            var thisAudio = document.getElementById("this-audio");
+            var thisImage = document.getElementById("this-image");
+            var thisVideo = document.getElementById("this-video");
+            var thisPlaceholder = document.getElementById("this-placeholder");
+            
+            thisAudio.classList.remove("hidden");
+            thisPlaceholder.classList.add("hidden");
+            
+            thisAudio.addEventListener('timeupdate',function () {
+                var currentTime = thisAudio.currentTime;
+                
+                if(!thisAudio.paused && ( 
+                    (currentTime > 2.5 && currentTime < 3.4) ||
+                    (currentTime > 7.9 && currentTime < 8.5)
+                    )) {
+                    thisImage.classList.remove("hidden");
+                } else {
+                    thisImage.classList.add("hidden");
+                }
+                
+                if(!thisAudio.paused && (
+                (currentTime > 4.1 && currentTime < 5.1) ||
+                (currentTime > 8.9 && currentTime < 9.8)
+                )) {
+                    thisVideo.classList.remove("hidden");
+                } else {
+                    thisVideo.classList.add("hidden");
+                }
+                
+            });
+        }
+    </script>
 </head>
 <body>
+    <div id="this-image" class="fullscreen fixed hidden"></div>
+    <div id="this-video" class="fullscreen fixed hidden">
+        <iframe src="https://www.youtube.com/embed/D1WqlRx2siQ" frameborder="0" allowfullscreen></iframe>
+    </div>
 	<div id="container">
 		<div id="wrapper">
 			<div id="content">
 				<header>
-					<div id="page-title"><span>RamblyAs</span><span>F**k.com!</div>
+					<div id="page-title"><span>RamblyAs</span><span>F**k.com!</span></div>
 					<p>Because rambling happens. A lot.</p>
 				</header>
-				<div id="main-content">
-					<p>Welcome to the website that shouldn’t have been made but was. This was created to document the large amount of rambling <a href="https://www.tomscott.com/">Tom Scott</a> and <a href="http://mattg.co.uk/">Matt Gray</a> do in their YouTube series: <a href="https://www.youtube.com/channel/UCRUULstZRWS1lDvJBzHnkXA">The Park Bench</a>.</p>
+				<main>
+                    <section>
+                        <a name="intro"></a>
+                        <p>Welcome to the website that shouldn’t have been made but was. This was created to document the large amount of rambling <a href="https://www.tomscott.com/">Tom Scott</a> and <a href="http://mattg.co.uk/">Matt Gray</a> do in their YouTube series: <a href="https://www.youtube.com/channel/UCRUULstZRWS1lDvJBzHnkXA">The Park Bench</a>.</p>
+                    </section>
 					<hr/>
-					<p>Here we see the beginnings of this website where Matt jokingly comes up with a domain name. Funny joke.</p>
-					<iframe src="https://www.youtube.com/embed/kiKy2VCKJQI" frameborder="0" class="video" allowfullscreen></iframe>
+                    <section>
+                        <a name="live"></a>
+                        <p>Here we see the beginnings of this website where Matt jokingly comes up with a domain name. Funny joke.</p>
+                        <iframe src="https://www.youtube.com/embed/kiKy2VCKJQI" frameborder="0" class="video" allowfullscreen></iframe>
+                    </section>
 					<hr/>
-					<p>Tom acknowledges the domain was purchased in this video. He also hopes the domain owner’s (Hi!) intentions are good. Don’t worry, we’re cool.</p>
-					<iframe src="https://www.youtube.com/embed/4qvn3FrHutU" frameborder="0" class="video" allowfullscreen></iframe>
+                    <section>
+                        <a name="ramble"></a>
+                        <p>Tom acknowledges the domain was purchased in this video. He also hopes the domain owner’s (Hi!) intentions are good. Don’t worry, we’re cool.</p>
+                        <iframe src="https://www.youtube.com/embed/4qvn3FrHutU" frameborder="0" class="video" allowfullscreen></iframe>
+                    </section>
 					<hr/>
-					<p>Nah, it's still rambly.</p>
-					<iframe src="https://www.youtube.com/embed/cNCn-yRqNQ4" frameborder="0" class="video" allowfullscreen></iframe>
+                    <section>
+                        <a name="hololens"></a>
+                        <p>Nah, it's still rambly.</p>
+                        <iframe src="https://www.youtube.com/embed/cNCn-yRqNQ4" frameborder="0" class="video" allowfullscreen></iframe>
+                    </section>
 					<hr/>
-					<p>Mentioning the name of the website is a good way to end up on the website.</p>
-					<iframe src="https://www.youtube.com/embed/LiVM6JqJiaA" frameborder="0" class="video" allowfullscreen></iframe>
+                    <section>
+                        <a name="htc-vive"></a>
+                        <p>Mentioning the name of the website is a good way to end up on the website.</p>
+                        <iframe src="https://www.youtube.com/embed/LiVM6JqJiaA" frameborder="0" class="video" allowfullscreen></iframe>
+                    </section>
 					<hr/>
-					<p>I approve of Mustang Beans.</p>
-					<iframe src="https://www.youtube.com/embed/Hd7d1TTcxq8" frameborder="0" class="video" allowfullscreen></iframe>
+                    <section>
+                        <a name="mustang-beans"></a>
+                        <p>I approve of Mustang Beans.</p>
+                        <iframe src="https://www.youtube.com/embed/Hd7d1TTcxq8" frameborder="0" class="video" allowfullscreen></iframe>
+                    </section>
 					<hr/>
-					<p>I guess this was rambly</p>
-					<iframe src="https://www.youtube.com/embed/TLgplc9A-So" frameborder="0" class="video" allowfullscreen></iframe>
-				</div>
+                    <section>
+                        <a name="theory"></a>
+                        <p>I guess this was rambly</p>
+                        <iframe src="https://www.youtube.com/embed/TLgplc9A-So" frameborder="0" class="video" allowfullscreen></iframe>
+                    </section>
+					<hr/>
+                    <section>
+                        <a name="apology"></a>
+                        <p onload="startTheFun();">
+                            It cost me money to record this audio clip, so you better enjoy it!<br/>
+                            (I honestly don't care, given that I spent more on this domain)
+                        </p>
+						<p id="this-placeholder">
+                            Loading Audio...
+                        </p>
+                        <audio controls id="this-audio" class="hidden">
+                            <source src="support_call.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <p>Here is that video:</p>
+                        <iframe src="https://www.youtube.com/embed/BnzN3zDKFEI" frameborder="0" class="video" allowfullscreen></iframe>
+                    </section>
+				</main>
 				<footer>
 					<div>
 						<p>
-						This website is not operated by Matt or Tom. I am not Matt or Tom. I don't communicate with Matt or Tom.
-						None of this is from them, ok?
+                            This website is not operated by Matt or Tom. I am not Matt or Tom. I don't communicate with Matt or Tom. None of this is from them, ok?<br/>
+                            I am <a href="https://dbradley771.com">David Bradley</a> (not the actor). Wrote this website by hand, sorry if it's broken.
 						</p>
 						<p>
-						I am <a href="http://dbradley771.com">David Bradley</a> (not the actor). Wrote this website by hand, sorry if it's broken.
 						</p>
 						<p>
-						Last update April 29, 2017
+                            Wanna help make this site? <a href="https://github.com/dbradley771/Ramble">Edit it on GitHub!</a>
 						</p>
 					</div>
 				</footer>
