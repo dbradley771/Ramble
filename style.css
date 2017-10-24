@@ -43,6 +43,11 @@ a:hover {
     display: none;
 }
 
+.fullscreen.hidden {
+    display: block;
+    z-index: -1000;
+}
+
 #this-image {
     background:#000000 url('this-image.png') center no-repeat;
     background-size: contain;
