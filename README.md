@@ -1,2 +1,2 @@
 # Ramble
-ramblyasfuck.com
+[ramblyasfuck.com](ramblyasfuck.com)
