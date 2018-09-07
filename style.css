@@ -1,8 +1,6 @@
 @font-size-base: 15px;
 
 html, body {
-	height: 100%;
-	width: 100%;
 	margin: 0;
 	padding: 0;
 	background: #000000;
@@ -49,13 +47,14 @@ a:hover {
 }
 
 #this-image {
-    background:#000000 url('this-image.png') center no-repeat;
+    background:#000000 center no-repeat;
+    background-image: url('this-image.png');
     background-size: contain;
 }
 
-#this-video iframe {
-    width: 100%;
-    height: 100%;
+#this-video {
+    background:#000000 center no-repeat;
+    background-size: contain;
 }
 
 #this-placeholder {

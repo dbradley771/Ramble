@@ -20,7 +20,7 @@
     <meta name="msapplication-TileColor" content="#424242">
     <meta name="msapplication-TileImage" content="mstile-144x144.png">
     <meta name="theme-color" content="#424242">
-    <script type="text/javascript">
+    <script type="text/javascript">    
         window.onload = function() {
             var thisAudio = document.getElementById("this-audio");
             var thisImage = document.getElementById("this-image");
@@ -29,6 +29,7 @@
             
             thisAudio.classList.remove("hidden");
             thisPlaceholder.classList.add("hidden");
+            thisVideo.style.backgroundImage = "none";
             
             thisAudio.addEventListener('timeupdate',function () {
                 var currentTime = thisAudio.currentTime;
@@ -47,7 +48,9 @@
                 (currentTime > 8.9 && currentTime < 9.8)
                 )) {
                     thisVideo.classList.remove("hidden");
+                    thisVideo.style.backgroundImage = "url(this-video.gif)";
                 } else {
+                    thisVideo.style.backgroundImage = "none";
                     thisVideo.classList.add("hidden");
                 }
                 
@@ -57,9 +60,7 @@
 </head>
 <body>
     <div id="this-image" class="fullscreen fixed hidden"></div>
-    <div id="this-video" class="fullscreen fixed hidden">
-        <iframe src="https://www.youtube.com/embed/D1WqlRx2siQ" frameborder="0" allowfullscreen></iframe>
-    </div>
+    <div id="this-video" class="fullscreen fixed hidden" style="background-image: url(this-video.gif);"></div>
 	<div id="container">
 		<div id="wrapper">
 			<div id="content">
@@ -116,7 +117,7 @@
                             (I honestly don't care, given that I spent more on this domain)
                         </p>
 						<p id="this-placeholder">
-                            Loading Audio...
+                            Loading...
                         </p>
                         <audio controls id="this-audio" class="hidden">
                             <source src="support_call.mp3" type="audio/mpeg">
