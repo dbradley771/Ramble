@@ -54,6 +54,7 @@ a:hover {
 
 #this-video {
     background:#000000 center no-repeat;
+    background-image: url('this-video.gif');
     background-size: contain;
 }
 

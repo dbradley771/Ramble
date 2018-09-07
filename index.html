@@ -29,7 +29,6 @@
             
             thisAudio.classList.remove("hidden");
             thisPlaceholder.classList.add("hidden");
-            thisVideo.style.backgroundImage = "none";
             
             thisAudio.addEventListener('timeupdate',function () {
                 var currentTime = thisAudio.currentTime;
@@ -48,9 +47,7 @@
                 (currentTime > 8.9 && currentTime < 9.8)
                 )) {
                     thisVideo.classList.remove("hidden");
-                    thisVideo.style.backgroundImage = "url(this-video.gif)";
                 } else {
-                    thisVideo.style.backgroundImage = "none";
                     thisVideo.classList.add("hidden");
                 }
                 
@@ -60,7 +57,7 @@
 </head>
 <body>
     <div id="this-image" class="fullscreen fixed hidden"></div>
-    <div id="this-video" class="fullscreen fixed hidden" style="background-image: url(this-video.gif);"></div>
+    <div id="this-video" class="fullscreen fixed hidden"></div>
 	<div id="container">
 		<div id="wrapper">
 			<div id="content">
