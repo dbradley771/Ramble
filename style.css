@@ -1,30 +1,30 @@
 @font-size-base: 15px;
 
 html, body {
-	margin: 0;
-	padding: 0;
-	background: #000000;
-	color: #ffffff;
-	font-size: 110%;
-	font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    color: #ffffff;
+    font-size: 110%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 hr {
     border: 0;
-	border-bottom: 1px dashed rgba(255,255,255,0.25);
+    border-bottom: 1px dashed rgba(255,255,255,0.25);
     height: 1px;
-	padding: 0;
-	margin: 1rem 5rem;
+    padding: 0;
+    margin: 1rem 5rem;
 }
 
 a {
-	text-decoration: none;
-	color: #ffffff;
-	border-bottom: 1px dotted #ffffff;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px dotted #ffffff;
     cursor: pointer;
 }
 a:hover {
-	border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
 
 .fixed {
@@ -67,118 +67,118 @@ a:hover {
     height: 100vh;
     width: 100%;
     background-color: #000000;
-	font-size: 0;
-	position: fixed;
-	z-index: 0;
-	min-width: 320px;
+    font-size: 0;
+    position: fixed;
+    z-index: 0;
+    min-width: 320px;
 }
 
 #background-holder div {
     width: 50%;
-	height:100vh;
-	display: inline-block;
+    height:100vh;
+    display: inline-block;
 }
 
 #background-holder span {
-	display: block;
-	height: 100%;
-	width: 100%;
-	margin-top: 40vh;
-	max-height: 60vh;
-	
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-top: 40vh;
+    max-height: 60vh;
+    
 }
 
 #background-blue {
-	background: #428BCA;
+    background: #428BCA;
 }
 
 #background-blue span {
-	background: url("matt.png") no-repeat left bottom;
+    background: url("matt.png") no-repeat left bottom;
     background-size: contain;
 }
 
 #background-red {
-	background: #C02C38;
+    background: #C02C38;
 }
 
 #background-red span {
-	background: #C02C38 url("tom.png") no-repeat right bottom;
+    background: #C02C38 url("tom.png") no-repeat right bottom;
     background-size:contain;
 }
 
 #container {
     position: absolute;
     z-index: 100;
-	width: 100%;
-	min-height: 100%;
-	min-width: 320px;
+    width: 100%;
+    min-height: 100%;
+    min-width: 320px;
 }
 
 #wrapper {
-	max-width: 60rem;
-	margin: auto;
+    max-width: 60rem;
+    margin: auto;
 }
 
 #content {
-	padding: 0 2rem;
-	text-align: center;
-	background: rgba(0,0,0,0.2);
+    padding: 0 2rem;
+    text-align: center;
+    background: rgba(0,0,0,0.2);
 }
 
 main p {
-	margin: 0;
-	padding: 0.5rem;
+    margin: 0;
+    padding: 0.5rem;
 }
 
 header {
-	padding: 2rem 0 0.5em 0;
-	margin-bottom: 1.5rem;
-	text-align: center;
-	border-bottom: 1px solid rgba(255,255,255,0.75);
-	font-family: 'Oleo Script', sans-serif;
-	font-size: 100%;
-	text-shadow: 0 0.075em 0.05em rgba(0, 0, 0, 0.25);
+    padding: 2rem 0 0.5em 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.75);
+    font-family: 'Oleo Script', sans-serif;
+    font-size: 100%;
+    text-shadow: 0 0.075em 0.05em rgba(0, 0, 0, 0.25);
 }
 
 header p {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 #page-title {
-	display: block;
-	font-size: 300%;
+    display: block;
+    font-size: 300%;
     -ms-transform: rotate(-5deg);
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
 }
 
 @media screen and (min-width: 455px) {
-	header {font-size: 175%;}
+    header {font-size: 175%;}
 }
 
 #page-title span {
-	display: inline-block;
+    display: inline-block;
 }
 
 .video {
-	padding: 0.5rem;
-	background: white;
-	width: 100%;
-	max-width: 40rem;
-	height: 23rem;
-	box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
+    padding: 0.5rem;
+    background: white;
+    width: 100%;
+    max-width: 40rem;
+    height: 23rem;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24);
     box-sizing: border-box;
 }
 
 footer {
-	padding: 0.55rem 0;
-	margin-top: 2rem;
-	text-align: center;
-	border-top: 1px solid rgba(255,255,255,0.75);
-	font-size: 55%;
+    padding: 0.55rem 0;
+    margin-top: 2rem;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.75);
+    font-size: 55%;
 }
 
 footer div {
-	opacity: 0.55;
+    opacity: 0.55;
 }
