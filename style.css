@@ -46,13 +46,13 @@ a:hover {
 
 #this-image {
     background:#000000 center no-repeat;
-    background-image: url('this-image.png');
+    background-image: url('media/this-image.png');
     background-size: contain;
 }
 
 #this-video {
     background:#000000 center no-repeat;
-    background-image: url('this-video.gif');
+    background-image: url('media/this-video.gif');
     background-size: contain;
 }
 
@@ -91,7 +91,7 @@ a:hover {
 }
 
 #background-blue span {
-    background: url("matt.png") no-repeat left bottom;
+    background: url("media/matt.png") no-repeat left bottom;
     background-size: contain;
 }
 
@@ -100,7 +100,7 @@ a:hover {
 }
 
 #background-red span {
-    background: #C02C38 url("tom.png") no-repeat right bottom;
+    background: #C02C38 url("media/tom.png") no-repeat right bottom;
     background-size:contain;
 }
 
